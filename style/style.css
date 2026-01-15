@@ -136,7 +136,23 @@ margin: 0 auto;
   color: #FF900E;
   font-weight: 700;
 }
+/* responser_info related style */
+.responser_info{
+  max-width: 542px;
+  border: 1px solid darkblue;
+  margin: 50px auto;
+  text-align: center;
+}
 
+.sponsporr_compani{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-top: 3rem;
+
+}
+.sponsporr_compani img{
+  filter: grayscale(100%);
+}
 
 
 /* some fact_card related style  */
@@ -188,12 +204,26 @@ margin: 0 auto;
   .temas,
   .nav_links{
     flex-direction: column;
+   
 
   }
   .tims_imgs_container{
     grid-template-columns: repeat(1,1fr);
    
   }
+  .facts_container{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    gap: 10px;
+   
+  }
+  .sponsporr_compani{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    gap: 50px;
+  }
+
+
 }
 
 
@@ -206,7 +236,12 @@ margin: 0 auto;
   .our_features_containner{
     margin: 50px auto;
   }
-  
+
+  .sponsporr_compani , .facts_container{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 50px;
+  }
 }
 
 
